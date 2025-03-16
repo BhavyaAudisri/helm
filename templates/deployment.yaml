@@ -8,7 +8,7 @@ metadata:
     # tier: frontend
     purpose: helm-deployment
     
-  spec:
+spec:
   replicas: {{ .Values.deployment.replicas }}
   selector:
     matchLabels:
