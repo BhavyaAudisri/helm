@@ -8,6 +8,7 @@ spec:
     app: nginx
     tier: frontend
     purpose: deployment
+    project: expense
   ports:
   - protocol: TCP
     port: 80 # service port

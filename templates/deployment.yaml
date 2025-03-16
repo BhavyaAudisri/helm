@@ -7,6 +7,7 @@ metadata:
     app: nginx
     tier: frontend
     purpose: deployment
+    project: expense
 spec:
   replicas: {{ .Values.deployment.replicas }}
   selector:
@@ -14,12 +15,14 @@ spec:
       app: nginx
       tier: frontend
       purpose: deployment
+      project: expense
   template:
     metadata:
       labels:
         app: nginx
         tier: frontend
         purpose: deployment
+        project: expense
     spec:
       containers:
       - name: nginx
