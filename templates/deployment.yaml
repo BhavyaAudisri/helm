@@ -4,25 +4,25 @@ metadata:
   name: nginx
   # labels of deployment resource
   labels:
-    app: nginx
-    tier: frontend
+    # app: nginx
+    # tier: frontend
     purpose: helm-deployment
-    project: expense
-spec:
+    
+  spec:
   replicas: {{ .Values.deployment.replicas }}
   selector:
     matchLabels:
-      app: nginx
-      tier: frontend
+      # app: nginx
+      # tier: frontend
       purpose: helm-deployment
-      project: expense
+      
   template:
     metadata:
       labels:
-        app: nginx
-        tier: frontend
+        # app: nginx
+        # tier: frontend
         purpose: helm-deployment
-        project: expense
+        
     spec:
       containers:
       - name: nginx

@@ -5,10 +5,10 @@ metadata:
 spec:
   type: LoadBalancer
   selector: # labels are used as selectors
-    app: nginx
-    tier: frontend
+    # app: nginx
+    # tier: frontend
     purpose: helm-deployment
-    project: expense
+    
   ports:
   - protocol: TCP
     port: 80 # service port
