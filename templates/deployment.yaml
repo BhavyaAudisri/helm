@@ -9,7 +9,8 @@ metadata:
   #   purpose: deployment
 spec:
   replicas: {{ .Values.deployment.replicas }} #assume this will change
-  # selector:
+  selector:
+    name: nginx
   #   matchLabels:
   #     app: nginx
   #     tier: frontend
