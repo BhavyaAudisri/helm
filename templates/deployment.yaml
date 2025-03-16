@@ -21,7 +21,7 @@ spec:
       #   tier: frontend
       #   purpose: deployment
     #spec:
-      containers:
+    containers:
       - name: nginx
         image: nginx:{{ .Values.deployment.imageVersion }} # image version frequently changes
         ports:
