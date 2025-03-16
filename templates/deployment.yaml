@@ -14,15 +14,16 @@ spec:
   #     app: nginx
   #     tier: frontend
   #     purpose: deployment
-  #template:
-    #metadata:
+  template:
+    metadata:
+      name: nginx
       # labels:
       #   app: nginx
       #   tier: frontend
       #   purpose: deployment
-    #spec:
-    containers:
-      - name: nginx
-        image: nginx:{{ .Values.deployment.imageVersion }} # image version frequently changes
-        ports:
-        - containerPort: 80
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:{{ .Values.deployment.imageVersion }} # image version frequently changes
+          ports:
+          - containerPort: 80
